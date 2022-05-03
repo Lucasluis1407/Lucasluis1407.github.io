@@ -3,7 +3,7 @@
   margin-right: auto;
   min-width: 320px;
   max-width: 901px;
-  background-image: linear-gradient( to bottom, transparent 0%,rgb(7, 9, 23) ,#2f80ed 90%),url(assets/NLW-return-\ 2560x1600.png);
+  background-image: linear-gradient( to bottom, transparent 0%,#102a4c ,#2f80ed 90%),url(assets/NLW-return-\ 2560x1600.png);
   background-size: 170%;
   position: relative;
   
@@ -86,7 +86,7 @@ body {
 
 .box {
   position:relative;
-  width: 100%;
+  width: 105%;
   height: 900px;
   background-color: #141922;
   transition: 0.3s;
