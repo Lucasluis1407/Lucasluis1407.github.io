@@ -1,20 +1,34 @@
 :root {
-  margin: 0;
+  margin: 0%;
+  text-align:center;
   position: relative;
   background-image: linear-gradient(to bottom, transparent 0%, rgb(0, 0, 0) 65%), url(/assets/programacao-scaled.jpg);
-  background-size: contain;
+  background-size:contain;
   width: 100%; 
   height: px
+  
 }
 
 h1 {
+  margin-left: 41.5%;
+  height: 40px;
+  width: 300px;
   font-family: 'Dm Sans';
+
+}
+
+.decotitle {
+  background-color: black;
   font-size: 30px;
+  border-radius: 0.8rem;
+  border: 3px solid #2f80ed;
 }
 
 h4 {
-  display: inline-block;
-  max-width: 800px;
+  margin-left: 27%;
+  align-items:center;
+  display: block;
+  width: 800px;
   height: 300px;
   text-align: justify;
   padding: 10px;
@@ -26,10 +40,20 @@ h4 {
 
 h2 {
   font-size:30px;
+  margin-left: 41.5%;
+  height: 40px;
+  width: 300px;
+  font-family: 'Dm Sans';
 }
 
+h3 {
+  font-size: 30px;
+}
+
+
 .fig {
-  vertical-align: -280%;
+  align-items: center;
+  vertical-align: -150%;
 }
 
 body {
@@ -59,8 +83,10 @@ body {
 }
 
 .box {
-  position: relative;
-  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  position:relative;
+  width: 55%;
   height: 900px;
   background-color: #141922;
   transition: 0.3s;
@@ -76,8 +102,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 560px;
-  height: 50px;
+  width: 1450px;
+  height: 300px;
   transform: rotate(-40deg) translateY(-100px);
   background: linear-gradient(to right,#56e8f2,#2f80ed);
 }
@@ -96,13 +122,14 @@ body {
 }
 
 .text-content{
+  text-align: left;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   background-color: #141922;
   width: 295px;
-  height: 415px;
+  height: 650px;
   z-index: 10;
   color: #FFF;
   padding: 0 1em;
@@ -114,9 +141,10 @@ body {
 .text-content a{
   text-decoration: none;
   display: block;
-  width: 140px;
+  width: 180px;
   text-align: center;
   color: #FFF;
   line-height: 43px;
   border: 2px solid #FFF;
 }
+
