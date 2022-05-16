@@ -7,7 +7,7 @@
 
 :root {
   
-  background-image: url("./assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
+  background-image: url("/assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
   background-size: 100vw;
   
 }
@@ -221,6 +221,10 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+.text-content h3 {
+  text-align: center;
 }
 
 .text-content a {
@@ -504,7 +508,7 @@ form button:hover, form button:focus{
   /*======= GERAL ================*/
 
   :root {
-    background-image: url("./assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
+    background-image: url("/assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
     background-size: 100vw;
   }
 
@@ -693,7 +697,7 @@ form button:hover, form button:focus{
   /*======= PROJETOS ================*/
   .box {
     display: inline-block;
-    left: 530px;
+    left: 100px;
     
     margin-top: 20px;
   
@@ -749,6 +753,10 @@ form button:hover, form button:focus{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .text-content h3 {
+    text-align: center;
   }
   
   .text-content a {
