@@ -5,13 +5,6 @@
 }
 
 
-:root {
-  
-  background-image: url("/assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
-  background-size: 100vw;
-  
-}
-
 ul {
   list-style: none;
 }
@@ -20,6 +13,8 @@ ul {
 html {
   /* chrome://flags/#smooth-scrolling */
   scroll-behavior: smooth;
+
+
 }
 
 html,
@@ -27,6 +22,8 @@ body {
   width: 100%;
   height: 100%;
   font-family: 'Dm Sans';
+  background-image: url("/assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
+  background-size: 100vw;
 }
 
 body {
@@ -227,18 +224,51 @@ h3 {
   text-align: center;
 }
 
-.text-content a {
-  
-  text-decoration: none;
-  display: block;
-  gap: 10px;
-  width: 180px;
-  text-align: center;
+
+.text-content button {
+  font-size: 19px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
   color: #FFF;
-  line-height: 43px;
-  border: 2px solid #FFF;
+  background: none;
+  border: none;
+  padding: 14px 22px;
+  position: relative;
+} 
+
+.text-content button::before {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%) translateX(calc(100% + 40px));
+  width: 32px;
+  height: 32px;
+  background: #2f80ed;
+  border-radius: 50px;
+  transition: transform .25s .25s cubic-bezier(0,0,.5,2), 
+  width .25s cubic-bezier(0,0,.5,2);
+  z-index: -1;
 }
 
+.text-content button:hover::before {
+  left: 35px;
+  width: 89%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s cubic-bezier(0,0,.5,2),
+  width .25s .25s cubic-bezier(0,0,.5,2);
+}
+
+.text-content button img {
+  margin-left: 7px;
+  width: 25px;
+  transition: transform .25s .4s cubic-bezier(0,0,.5,2);
+}
+
+.text-content button:hover img {
+  transform: translateX(2px);
+}
 
 
 .centroimg img {
@@ -410,10 +440,6 @@ body.menu-expanded .menu {
   
 }
 
-#backToTopButton circle {
-  fill: #2f80ed;
-}
-
 
 #backToTopButton.show {
   opacity: 1;
@@ -457,7 +483,7 @@ form button svg {
 
 
 
-form button {
+.centrocontatos form button {
 
   display: flex;
   flex-direction: row;
@@ -490,7 +516,7 @@ form button {
 
 }
 
-form button:hover, form button:focus{
+.centrocontatos form button:hover, .centrocontatos form button:focus{
   border-color: #2194ff;
   color: #FFF;
 }
@@ -549,7 +575,7 @@ form button:hover, form button:focus{
   }
  
 
-  form button {
+  .centrocontatos form button {
 
     display: flex;
     flex-direction: row;
@@ -582,7 +608,7 @@ form button:hover, form button:focus{
 
   }
 
-  form button:hover, form button:focus{
+  .centrocontatos form button:hover, .centrocontatos form button:focus{
     border-color: #2194ff;
     color: #FFF;
   }
@@ -668,7 +694,7 @@ form button:hover, form button:focus{
     content: '';
     width: 0%;
     height: 1px;
-    background-color: white;
+    background-color: #FFF;
 
     position: relative;
     bottom: -0.5rem;
@@ -680,7 +706,7 @@ form button:hover, form button:focus{
   }
 
   nav#navigation.scroll .menu li a::after {
-    background-color: white;
+    background-color: #FFF;
   }
 
   nav#navigation .menu li a.active::after,
@@ -759,16 +785,50 @@ form button:hover, form button:focus{
     text-align: center;
   }
   
-  .text-content a {
-    
-    text-decoration: none;
-    display: block;
-    gap: 10px;
-    width: 180px;
-    text-align: center;
+  .text-content button {
+    font-size: 19px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  
     color: #FFF;
-    line-height: 43px;
-    border: 2px solid #FFF;
+    background: none;
+    border: none;
+    padding: 14px 22px;
+    position: relative;
+  } 
+  
+  .text-content button::before {
+    content:'';
+    position: absolute;
+    top: 50%;
+    left: 45px;
+    transform: translateY(-50%) translateX(calc(100% + 40px));
+    width: 32px;
+    height: 32px;
+    background: #2f80ed;
+    border-radius: 50px;
+    transition: transform .25s .25s cubic-bezier(0,0,.5,2), 
+    width .25s cubic-bezier(0,0,.5,2);
+    z-index: -1;
+  }
+  
+  .text-content button:hover::before {
+    left: 32px;
+    width: 87%;
+    transform: translateY(-50%) translateX(-18px);
+    transition: transform .25s cubic-bezier(0,0,.5,2),
+    width .25s .25s cubic-bezier(0,0,.5,2);
+  }
+  
+  .text-content button img {
+    margin-left: 10px;
+    width: 25px;
+    transition: transform .25s .4s cubic-bezier(0,0,.5,2);
+  }
+  
+  .text-content button:hover img {
+    transform: translateX(2px);
   }
   
   /*======= TECNOLOGIAS ================*/
@@ -777,7 +837,7 @@ form button:hover, form button:focus{
 
     display: inline-block;
 
-    margin-left: 80px;
+    margin-left: 50px;
     margin-right: auto;
 
     margin-top: 20px;
@@ -785,6 +845,11 @@ form button:hover, form button:focus{
   
     width: 90px;
     height: 90px;
+  }
+
+  .smart .centroimg {
+    width: 100vw;
+    
   }
   
 
