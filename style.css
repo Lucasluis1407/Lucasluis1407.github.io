@@ -536,6 +536,7 @@ form button svg {
   :root {
     background-image: url("/assets/pawel-czerwinski-JG2DaZZzvzk-unsplash\(1\).jpg");
     background-size: 100vw;
+
   }
 
   .smart {
@@ -628,6 +629,14 @@ form button svg {
 
   nav {
     height: 80px;
+    display:flex;
+    top: 0;
+    width: 100vw;
+
+    z-index: 100;
+  
+
+    position: fixed;
   }
 
   nav#navigation .smart * {
@@ -721,6 +730,7 @@ form button svg {
   }
 
   /*======= PROJETOS ================*/
+
   .box {
     display: inline-block;
     left: 100px;
@@ -848,7 +858,7 @@ form button svg {
   }
 
   .smart .centroimg {
-    width: 100vw;
+    width: 60vw;
     
   }
   
