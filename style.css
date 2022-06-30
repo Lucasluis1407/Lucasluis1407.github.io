@@ -225,7 +225,7 @@ h3 {
 }
 
 
-.text-content button {
+.text-content form button {
   font-size: 19px;
   text-transform: uppercase;
   display: flex;
@@ -237,7 +237,7 @@ h3 {
   position: relative;
 } 
 
-.text-content button::before {
+.text-content form button::before {
   content:'';
   position: absolute;
   top: 50%;
@@ -252,7 +252,7 @@ h3 {
   z-index: -1;
 }
 
-.text-content button:hover::before {
+.text-content form button:hover::before {
   left: 35px;
   width: 89%;
   transform: translateY(-50%) translateX(-18px);
@@ -260,13 +260,13 @@ h3 {
   width .25s .25s cubic-bezier(0,0,.5,2);
 }
 
-.text-content button img {
+.text-content form button img {
   margin-left: 7px;
   width: 25px;
   transition: transform .25s .4s cubic-bezier(0,0,.5,2);
 }
 
-.text-content button:hover img {
+.text-content form button:hover img {
   transform: translateX(2px);
 }
 
