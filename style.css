@@ -241,7 +241,7 @@ h3 {
   content:'';
   position: absolute;
   top: 50%;
-  left: 42px;
+  left: 52px;
   transform: translateY(-50%) translateX(calc(100% + 40px));
   width: 32px;
   height: 32px;
